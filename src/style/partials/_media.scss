@@ -1,0 +1,433 @@
+@media (min-width: 576px) {
+  .intro {
+
+    &__slider-item {
+      height: 400px;
+    }
+
+    &__slider-title {
+      font-size: 50px;
+      line-height: 55px;
+    }
+  }
+
+  .tabs {
+
+    &__item {
+      font-size: 30px;
+      line-height: 30px;
+      padding: 32px 0;
+      margin-right: 80px;
+    }
+
+    &__content-title {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &__content-list-item {
+      padding-left: 53px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .intro {
+
+    &__slider-item {
+      height: 450px;
+    }
+
+    &__slider-title {
+      font-size: 72px;
+      line-height: 72px;
+      margin-bottom: 33px;
+    }
+
+    &__slider-text {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 10px;
+    }
+
+    &__slider-link {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .tabs {
+
+    &__item {
+      font-size: 36px;
+      line-height: 36px;
+      padding: 42px 0;
+      margin-right: 110px;
+    }
+
+    &__content-title {
+      font-size: 36px;
+      line-height: 49px;
+    }
+  }
+
+  .feedback-form {
+
+    &__content {
+      display: flex;
+      align-items: flex-end;
+      margin: 0 -8px;
+    }
+
+    &__left, &__right {
+      flex-basis: 50%;
+      margin: 0 8px;
+    }
+  }
+
+  .popup-form {
+
+    &__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    &__two-cols {
+      display: flex;
+      justify-content: space-between;
+
+      .feedback-form__label {
+        flex-basis: calc(50% - 12px);
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  // header
+  .header {
+
+    &__wrap {
+      padding: 20px 0;
+    }
+
+    &__nav {
+      display: block;
+      position: static;
+      width: auto;
+      height: auto;
+      padding: 0;
+    }
+
+    &__nav-close {
+      display: none;
+    }
+
+    &__menu {
+      display: flex;
+      font-size: 16px;
+    }
+
+    &__menu-link:not(.header__callback) {
+      position: relative;
+      padding: 6px 0;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 4px;
+        width: 0;
+        background-color: $red;
+        border-radius: 3px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: $red;
+
+        &:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &__callback {
+
+      &:hover {
+        color: $dark;
+        border-color: $dark;
+      }
+    }
+
+    .burger {
+      display: none;
+    }
+  }
+
+  .intro {
+
+    &__slider-item {
+      height: 600px;
+    }
+
+    &__slider-link {
+      font-size: 36px;
+      line-height: 44px;
+      padding: 16px 55px 20px;
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+
+    .slick-dots li {
+      width: 16px;
+      height: 16px;
+    }
+
+    .slick-dots li button {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .properties {
+    padding: 120px 0 127px;
+
+    &__item {
+      flex-basis: calc(100% / 3);
+      text-align: center;
+      padding: 0 15px;
+      margin-bottom: 48px;
+    }
+  }
+
+  .about {
+    padding: 120px 0;
+
+    &__wrap {
+      display: flex;
+    }
+
+    &__content {
+      flex-basis: 50%;
+    }
+
+    &__image {
+      display: block;
+    }
+
+    &__title {
+      font-size: 72px;
+      line-height: 88px;
+      margin-bottom: 90px;
+    }
+
+    &__text {
+      margin-bottom: 90px;
+      font-size: 36px;
+      line-height: 49px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 24px;
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+
+  .tabs {
+    padding: 0 0 80px;
+
+    &__item {
+
+      &:hover {
+        color: $dark;
+
+        &:after {
+          content:"";
+          height: 6px;
+          width: 100%;
+          border-radius: 3px;
+          background-color: $red;
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+        }
+      }
+    }
+  }
+
+  .feedback-form {
+
+    &__content {
+      display: flex;
+      align-items: flex-end;
+      margin: 0 -20px;
+    }
+
+    &__file {
+
+      &:hover {
+        color: $dark;
+        border-color: $dark;
+      }
+    }
+
+    &__left, &__right {
+      flex-basis: 50%;
+      margin: 0 20px;
+    }
+
+    &__submit {
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+
+  .footer {
+
+    &__wrap {
+      justify-content: space-between;
+    }
+
+    &__nav {
+      display: block;
+    }
+
+    &__menu-link {
+      position: relative;
+      padding: 12px 0;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 4px;
+        width: 0;
+        background-color: $red;
+        border-radius: 3px;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        color: $red;
+
+        &:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &__social-item {
+
+      &:hover {
+        border-color: $red;
+
+        use {
+          fill: $red;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  .popup-form {
+    padding: 43px 63px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    &__close {
+
+      &:hover {
+
+        span {
+          background-color: $red;
+        }
+      }
+    }
+
+    &__submit {
+
+      &:hover {
+        background-color: $red;
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  // header
+  .header {
+
+    &__menu {
+      font-size: 20px;
+    }
+  }
+
+
+  .about {
+    padding: 130px 0;
+
+    &__content {
+      padding-right: 130px;
+    }
+
+    &__image--first {
+      width: 555px;
+    }
+
+    &__image--second {
+      width: 440px;
+      left: -150px;
+      bottom: -60px;
+    }
+  }
+
+  .footer {
+
+    &__menu-item {
+      padding: 0 26px;
+    }
+  }
+}
+
+
+@media (min-width: 1480px) {
+  // header
+  .header {
+
+    &__menu-item {
+      padding: 0 26px;
+    }
+  }
+
+  .about {
+
+    &__content {
+      padding-right: 100px;
+    }
+  }
+}

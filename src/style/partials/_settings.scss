@@ -1,0 +1,122 @@
+//============COLORS==============
+$white: #ffffff;
+$red: #FF5B5B;
+$dark: #423A39;
+$light-brown: #ECA078;
+$grey: #A69D91;
+//===========DEFAULT STYLES========
+
+$montserrat: 'Montserrat', sans-serif;
+$opensans: 'Open Sans', sans-serif;
+
+
+// Main
+
+* {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type = "checkbox"].visually-hidden,
+input[type = "radio"].visually-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+
+}
+
+
+body {
+  font-family: $opensans;
+  position: relative;
+  line-height: 27px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  -webkit-appearance: none;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 8px;
+  margin: 0 auto;
+
+  &.container-width {
+    max-width: 1810px;
+  }
+}
+
+
